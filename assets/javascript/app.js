@@ -24,4 +24,13 @@ function buttonRender() {
     $("#button-display").append(button);
   }
 }
+$("#add-tv").on("click", function(event){
+    event.preventDefault();
+    //storing text submitted to be used later
+    var show = $("#tv-input").val().trim();
+    //pushing new movie to array and running render function again showing buttons on page
+    tvShows.push(show);
+    buttonRender();
+
+})
 buttonRender();
