@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIPHY API Practice!</title>
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--my css-->
+    <link type="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <!--first row with the buttons to press-->
+        <div class="row">
+            <div class="col-md-12">
+                <!--where the buttons go to from javascript-->
+                <div id="button-display"></div>
+            </div>
+        </div>
+        <!--second row with pictures and form to make new buttons-->
+        <div class="row">
+            <div class="col-md-9">
+                <!--where GIPHY API puts pics-->
+                <div id="pics-display"></div>
+            </div>
+            <div class="col-md-3">
+                <!--form to make new buttons-->
+                <form id="tv-form">
+                    <label for="tv-input">Add a TV show!</label>
+                    <input type="text" id="tv-input">
+                    <br>
+              
+                    <!-- button triggers new movie to be added -->
+                    <input id="add-tv" type="submit" value="Add a TV show!">
+                  </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--my javascript-->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
